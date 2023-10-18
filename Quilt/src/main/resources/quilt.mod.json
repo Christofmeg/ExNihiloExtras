@@ -11,11 +11,11 @@
         "depends": [
             {
 				"id": "quilt_loader",
-				"version": "*"
+				"versions": "*"
 			},
 			{
 				"id": "quilt_base",
-				"version": "*"
+				"versions": "*"
 			}
         ],
         "metadata": {

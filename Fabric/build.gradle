@@ -37,9 +37,8 @@ dependencies {
         }
     }
 
-    modImplementation "curse.maven:fabricae-ex-nihilo-596911:4477736"
-    modImplementation "curse.maven:cloth-config-348521:4633414"
-    include(implementation(annotationProcessor("com.github.LlamaLad7:MixinExtras:0.1.1")))
+    modImplementation "curse.maven:fabricae-ex-nihilo-596911:4146052" //https://www.curseforge.com/minecraft/mc-mods/fabricae-ex-nihilo/files?page=1&pageSize=20
+    modImplementation "curse.maven:cloth-config-348521:4633414" //https://www.curseforge.com/minecraft/mc-mods/cloth-config/files?page=1&pageSize=20
 
 }
 

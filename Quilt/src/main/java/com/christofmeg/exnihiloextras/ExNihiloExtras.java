@@ -13,7 +13,7 @@ public class ExNihiloExtras implements ModInitializer {
 
     public static final QuiltItemGroup ITEM_GROUP = QuiltItemGroup.builder(
             new Identifier(MOD_ID, "general"))
-            .icon(() -> new ItemStack(ItemRegistration.DOLL_FROG))
+            .icon(() -> new ItemStack(ItemRegistration.DOLL_BEE))
             .build();
 
     @Override
