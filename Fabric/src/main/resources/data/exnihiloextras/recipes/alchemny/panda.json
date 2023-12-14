@@ -1,0 +1,11 @@
+{
+  "type": "fabricaeexnihilo:alchemy",
+  "reactant": "#c:water",
+  "catalyst": "exnihiloextras:doll_panda",
+  "delay": 20,
+  "toSpawn": {
+    "type": "minecraft:panda",
+    "size": 1,
+    "data": {}
+  }
+}
