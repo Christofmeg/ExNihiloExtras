@@ -1,0 +1,28 @@
+{
+   "type":"minecraft:crafting_shaped",
+   "key":{
+      "f":{
+         "item":"minecraft:bamboo"
+      },
+      "r":{
+         "tag":"c:white_dyes"
+      },
+      "g":{
+         "item":"minecraft:glowstone_dust"
+      },
+      "d":{
+         "item":"fabricaeexnihilo:doll"
+      },
+      "y":{
+         "tag":"c:black_dyes"
+      }
+   },
+   "pattern":[
+      "frf",
+      "gdg",
+      "fyf"
+   ],
+   "result":{
+      "item":"exnihiloextras:doll_panda"
+   }
+}
