@@ -1,1 +1,1 @@
-Added links to github and issue page.
+Added Sulling Doll (Panda)

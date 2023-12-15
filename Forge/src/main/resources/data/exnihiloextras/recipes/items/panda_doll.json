@@ -1,0 +1,28 @@
+{
+   "type":"minecraft:crafting_shaped",
+   "key":{
+      "f":{
+         "item":"minecraft:bamboo"
+      },
+      "r":{
+         "tag":"forge:dyes/white"
+      },
+      "g":{
+         "item":"minecraft:glowstone_dust"
+      },
+      "d":{
+         "item":"exnihilosequentia:porcelain_doll"
+      },
+      "y":{
+         "tag":"forge:dyes/black"
+      }
+   },
+   "pattern":[
+      "frf",
+      "gdg",
+      "fyf"
+   ],
+   "result":{
+      "item":"exnihiloextras:panda_doll"
+   }
+}

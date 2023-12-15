@@ -14,6 +14,7 @@ public class ItemRegistration {
 
     private static final DeferredRegister<Item> ITEMS;
     public static final RegistryObject<DollItem> FROG_DOLL;
+    public static final RegistryObject<DollItem> PANDA_DOLL;
 
     private ItemRegistration() {
     }
@@ -23,5 +24,6 @@ public class ItemRegistration {
     static {
         ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, ExNihiloExtras.MOD_ID);
         FROG_DOLL = ITEMS.register("frog_doll", () -> new DollItem("minecraft", "frog", "minecraft", "water", 1.5, ExNihiloExtras.MOD_ID + "." + "tooltip.doll.frog"));
+        PANDA_DOLL = ITEMS.register("panda_doll", () -> new DollItem("minecraft", "panda", "minecraft", "water", 1.5, ExNihiloExtras.MOD_ID + "." + "tooltip.doll.panda"));
     }
 }
