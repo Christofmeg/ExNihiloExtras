@@ -1,5 +1,7 @@
 {
   "item.exnihiloextras.doll_bee": "Buzzing Doll",
-  "exnihiloextras.tooltip.doll.bee": "Add to a barrel of water to spawn a bee",
+  "item.exnihiloextras.doll_panda": "Sulling Doll",
+  "exnihiloextras.tooltip.doll.bee": "Add to a barrel of water to spawn a Bee",
+  "exnihiloextras.tooltip.doll.panda": "Add to a barrel of water to spawn a Panda",
   "itemGroup.exnihiloextras.general": "Ex Nihilo Extras"
 }

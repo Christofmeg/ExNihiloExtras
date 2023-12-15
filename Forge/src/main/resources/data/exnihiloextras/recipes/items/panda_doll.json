@@ -2,19 +2,19 @@
    "type":"minecraft:crafting_shaped",
    "key":{
       "f":{
-         "tag":"minecraft:flowers"
+         "item":"minecraft:bamboo"
       },
       "r":{
-         "tag":"c:redstone_dusts"
+         "tag":"forge:dyes/white"
       },
       "g":{
          "item":"minecraft:glowstone_dust"
       },
       "d":{
-         "item":"fabricaeexnihilo:doll"
+         "item":"exnihilosequentia:crafting_doll"
       },
       "y":{
-         "tag":"c:yellow_dyes"
+         "tag":"forge:dyes/black"
       }
    },
    "pattern":[
@@ -23,6 +23,6 @@
       "fyf"
    ],
    "result":{
-      "item":"exnihiloextras:doll_bee"
+      "item":"exnihiloextras:panda_doll"
    }
 }

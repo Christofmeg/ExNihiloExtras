@@ -8,7 +8,7 @@
          "tag":"c:redstone_dusts"
       },
       "g":{
-         "item": "minecraft:glowstone_dust"
+         "item":"minecraft:glowstone_dust"
       },
       "d":{
          "item":"fabricaeexnihilo:doll"
