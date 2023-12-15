@@ -1,1 +1,1 @@
-Remove MixinExtras from jar in jar
+Added Sulling Doll (Panda)

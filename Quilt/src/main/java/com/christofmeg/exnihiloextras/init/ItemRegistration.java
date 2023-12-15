@@ -10,6 +10,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.minecraft.world.World;
+import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import org.quiltmc.qsl.item.setting.api.QuiltItemSettings;
 
@@ -32,12 +33,20 @@ public class ItemRegistration {
         }
     };
 
+    public static final Item DOLL_PANDA = new Item(new QuiltItemSettings()) {
+        @Override
+        public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+            tooltip.add(Text.translatable(ExNihiloExtras.MOD_ID + ".tooltip.doll.panda"));
+        }
+    };
+
     public static void registerItems() {
         Registry.register(Registries.ITEM, new Identifier(ExNihiloExtras.MOD_ID, "doll_bee"), DOLL_BEE);
         Registry.register(Registries.ITEM, new Identifier(ExNihiloExtras.MOD_ID, "doll_frog"), DOLL_FROG);
         ItemGroupEvents.modifyEntriesEvent(ExNihiloExtras.ITEM_GROUP).register(entries -> {
             entries.add(DOLL_BEE);
             entries.add(DOLL_FROG);
+            entries.add(DOLL_PANDA);
         });
     }
 
