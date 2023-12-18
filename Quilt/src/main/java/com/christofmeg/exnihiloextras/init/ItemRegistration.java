@@ -37,10 +37,18 @@ public class ItemRegistration {
         }
     };
 
+    public static final Item DOLL_TURTLE = new Item(new QuiltItemSettings().group(ExNihiloExtras.ITEM_GROUP)) {
+        @Override
+        public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
+            tooltip.add(Text.translatable(ExNihiloExtras.MOD_ID + ".tooltip.doll.turtle"));
+        }
+    };
+
     public static void registerItems() {
         Registry.register(Registry.ITEM, new Identifier(ExNihiloExtras.MOD_ID, "doll_bee"), DOLL_BEE);
         Registry.register(Registry.ITEM, new Identifier(ExNihiloExtras.MOD_ID, "doll_frog"), DOLL_FROG);
         Registry.register(Registry.ITEM, new Identifier(ExNihiloExtras.MOD_ID, "doll_panda"), DOLL_PANDA);
+        Registry.register(Registry.ITEM, new Identifier(ExNihiloExtras.MOD_ID, "doll_turtle"), DOLL_TURTLE);
     }
 
 }
