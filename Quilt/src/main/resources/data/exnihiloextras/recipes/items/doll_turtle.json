@@ -2,19 +2,19 @@
    "type":"minecraft:crafting_shaped",
    "key":{
       "f":{
-         "item":"minecraft:bamboo"
+         "item":"minecraft:seagrass"
       },
       "r":{
-         "tag":"forge:dyes/white"
+         "tag":"c:lime_dyes"
       },
       "g":{
-         "tag":"forge:dusts/glowstone"
+         "item":"minecraft:glowstone_dust"
       },
       "d":{
-         "item":"exnihilosequentia:porcelain_doll"
+         "item":"fabricaeexnihilo:doll"
       },
       "y":{
-         "tag":"forge:dyes/black"
+         "tag":"c:water_buckets"
       }
    },
    "pattern":[
@@ -23,6 +23,6 @@
       "fyf"
    ],
    "result":{
-      "item":"exnihiloextras:panda_doll"
+      "item":"exnihiloextras:doll_turtle"
    }
 }

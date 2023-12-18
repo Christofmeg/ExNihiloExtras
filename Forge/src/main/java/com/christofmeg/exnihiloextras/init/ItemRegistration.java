@@ -16,6 +16,8 @@ public class ItemRegistration {
     public static final RegistryObject<DollItem> FROG_DOLL;
     public static final RegistryObject<DollItem> PANDA_DOLL;
 
+    public static final RegistryObject<DollItem> TURTLE_DOLL;
+
     private ItemRegistration() {
     }
     public static void init(@Nonnull IEventBus modEventBus) {
@@ -25,5 +27,6 @@ public class ItemRegistration {
         ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, ExNihiloExtras.MOD_ID);
         FROG_DOLL = ITEMS.register("frog_doll", () -> new DollItem("minecraft", "frog", "minecraft", "water", 1.5, ExNihiloExtras.MOD_ID + "." + "tooltip.doll.frog"));
         PANDA_DOLL = ITEMS.register("panda_doll", () -> new DollItem("minecraft", "panda", "minecraft", "water", 1.5, ExNihiloExtras.MOD_ID + "." + "tooltip.doll.panda"));
+        TURTLE_DOLL = ITEMS.register("turtle_doll", () -> new DollItem("minecraft", "turtle", "minecraft", "water", 1.5, ExNihiloExtras.MOD_ID + "." + "tooltip.doll.turtle"));
     }
 }

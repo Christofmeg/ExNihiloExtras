@@ -1,6 +1,8 @@
 {
   "item.exnihiloextras.frog_doll": "Croaking Doll",
   "item.exnihiloextras.panda_doll": "Sulling Doll",
+  "item.exnihiloextras.turtle_doll": "Scuting Doll",
   "exnihiloextras.tooltip.doll.frog": "Add to a barrel of water to spawn a Frog",
-  "exnihiloextras.tooltip.doll.panda": "Add to a barrel of water to spawn a Panda"
+  "exnihiloextras.tooltip.doll.panda": "Add to a barrel of water to spawn a Panda",
+  "exnihiloextras.tooltip.doll.turtle": "Add to a barrel of water to spawn a Turtle"
 }
