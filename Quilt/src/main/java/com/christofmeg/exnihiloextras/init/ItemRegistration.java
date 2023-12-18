@@ -40,13 +40,23 @@ public class ItemRegistration {
         }
     };
 
+    public static final Item DOLL_TURTLE = new Item(new QuiltItemSettings()) {
+        @Override
+        public void appendHoverText(@NotNull ItemStack stack, @Nullable Level world, List< Component > tooltip, @NotNull TooltipFlag context) {
+            tooltip.add(Component.translatable(ExNihiloExtras.MOD_ID + ".tooltip.doll.turtle"));
+        }
+    };
+
     public static void registerItems() {
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(ExNihiloExtras.MOD_ID, "doll_bee"), DOLL_BEE);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(ExNihiloExtras.MOD_ID, "doll_frog"), DOLL_FROG);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(ExNihiloExtras.MOD_ID, "doll_panda"), DOLL_PANDA);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(ExNihiloExtras.MOD_ID, "doll_turtle"), DOLL_TURTLE);
         ItemGroupEvents.modifyEntriesEvent(ExNihiloExtras.ITEM_GROUP).register((items) -> {
             items.accept(DOLL_BEE);
             items.accept(DOLL_FROG);
             items.accept(DOLL_PANDA);
+            items.accept(DOLL_TURTLE);
         });
     }
 

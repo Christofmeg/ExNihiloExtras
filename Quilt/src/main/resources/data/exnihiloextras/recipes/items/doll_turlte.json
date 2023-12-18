@@ -1,0 +1,28 @@
+{
+   "type":"minecraft:crafting_shaped",
+   "key":{
+      "f":{
+         "item":"minecraft:seagrass"
+      },
+      "r":{
+         "tag":"c:lime_dyes"
+      },
+      "g":{
+         "item":"minecraft:glowstone_dust"
+      },
+      "d":{
+         "item":"fabricaeexnihilo:doll"
+      },
+      "y":{
+         "tag":"c:water_buckets"
+      }
+   },
+   "pattern":[
+      "frf",
+      "gdg",
+      "fyf"
+   ],
+   "result":{
+      "item":"exnihiloextras:doll_turtle"
+   }
+}

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "exnihiloextras:item/frog_doll"
+    "layer0": "exnihiloextras:item/doll_turtle"
   }
 }
