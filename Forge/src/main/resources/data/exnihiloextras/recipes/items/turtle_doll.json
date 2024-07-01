@@ -2,19 +2,19 @@
    "type":"minecraft:crafting_shaped",
    "key":{
       "f":{
-         "tag":"minecraft:flowers"
+         "item":"minecraft:seagrass"
       },
       "r":{
-         "tag":"c:redstone_dusts"
+         "tag":"forge:dyes/lime"
       },
       "g":{
-         "item":"minecraft:glowstone_dust"
+         "tag":"forge:dusts/glowstone"
       },
       "d":{
-         "item":"fabricaeexnihilo:doll"
+         "item":"exnihilosequentia:porcelain_doll"
       },
       "y":{
-         "tag":"c:yellow_dyes"
+         "tag":"forge:buckets/water"
       }
    },
    "pattern":[
@@ -23,6 +23,6 @@
       "fyf"
    ],
    "result":{
-      "item":"exnihiloextras:doll_bee"
+      "item":"exnihiloextras:turtle_doll"
    }
 }
