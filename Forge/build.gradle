@@ -81,7 +81,7 @@ tasks.register('publishCurseForge', TaskPublishCurseForge) {
         mainFile.addGameVersion("${it}")
     }
     mainFile.addModLoader('Forge', 'NeoForge')
-    mainFile.addRequirement("ex-nihilo-sequentia")
+    mainFile.addRequirement("exnihilosequentia")
     mainFile.addOptional("catalogue")
 }
 
@@ -94,7 +94,7 @@ modrinth {
     uploadFile = file("${project.buildDir}/libs/${archivesBaseName}-${version}.jar")
     gameVersions = "${forge_release_versions}".split(",") as List<String>
     dependencies {
-        required.project "ex-nihilo-sequentia"
+        required.project "exnihilosequentia"
     }
     loaders = "forge,neoforge".split(",") as List<String>
 }
