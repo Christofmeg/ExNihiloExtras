@@ -19,6 +19,6 @@ pluginManagement {
 
 rootProject.name = 'Ex Nihilo Extras'
 include("Common")
-//include("Fabric")
+include("Fabric")
 include("Forge")
-//include("Quilt")
+include("Quilt")
