@@ -22,52 +22,46 @@ subprojects {
     }
 
     repositories {
-
         mavenCentral()
-
         maven {
             name = 'Sponge / Mixin'
             url = 'https://repo.spongepowered.org/repository/maven-public/'
         }
-
         maven {
             name = 'BlameJared Maven (CrT / Bookshelf)'
             url = 'https://maven.blamejared.com'
         }
-
-        repositories {
-            maven {
-                // location of a maven mirror for JEI files, as a fallback
-                name = "ModMaven"
-                url = "https://modmaven.dev/"
-                content {
-                    includeGroup "mezz.jei"
-                }
+        maven {
+            // location of a maven mirror for JEI files, as a fallback
+            name = "ModMaven"
+            url = "https://modmaven.dev/"
+            content {
+                includeGroup "mezz.jei"
             }
-            maven {
-                url "https://www.cursemaven.com"
-                content {
-                    includeGroup "curse.maven"
-                }
-            }
-            maven {
-                url "https://api.modrinth.com/maven"
-                content {
-                    includeGroup "maven.modrinth"
-                }
-            }
-            maven {
-                url "https://maven.isxander.dev/releases"
-                content {
-                    includeGroup "dev.isxander.yacl"
-                }
-            }
-            maven { url "https://jitpack.io" }
         }
+        maven {
+            url "https://www.cursemaven.com"
+            content {
+                includeGroup "curse.maven"
+            }
+        }
+        maven {
+            name = "Modrinth"
+            url = "https://api.modrinth.com/maven"
+            content {
+                includeGroup "maven.modrinth"
+            }
+        }
+        maven {
+            url "https://maven.isxander.dev/releases"
+            content {
+                includeGroup "dev.isxander.yacl"
+            }
+        }
+        maven { url "https://jitpack.io" }
     }
 
     tasks.withType(JavaCompile).configureEach {
-    
         it.options.encoding = 'UTF-8'
         it.options.release = 17
     }
@@ -76,7 +70,6 @@ subprojects {
     // metadata includes mapped dependencies which are not reasonably consumable by
     // other mod developers.
     tasks.withType(GenerateModuleMetadata) {
-
         enabled = false
     }
 }

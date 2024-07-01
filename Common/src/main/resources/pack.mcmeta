@@ -1,8 +1,6 @@
 {
     "pack": {
-        "description": "§5ExNihiloExtras Resources",
-        "pack_format": 9,
-        "forge:resource_pack_format": 9,
-        "forge:data_pack_format": 10
+        "description": "§5ExNihiloExtras resources",
+        "pack_format": 15
     }
 }

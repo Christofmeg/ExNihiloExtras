@@ -1,5 +1,5 @@
 modLoader="javafml"
-loaderVersion="[43,)"
+loaderVersion="[47,)"
 issueTrackerURL="https://github.com/Christofmeg/ExNihiloExtras/issues" #optional
 license="The MIT License (MIT)"
 [[mods]]
@@ -16,19 +16,19 @@ Addon for Ex Nihilo: Sequentia adding extra features.
 [[dependencies.exnihiloextras]]
     modId="forge"
     mandatory=true
-    versionRange="[43,)"
+    versionRange="[47,)"
     ordering="NONE"
     side="BOTH"
 [[dependencies.exnihiloextras]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.19.2,1.19.3)"
+    versionRange="[1.20.1,1.20.2)"
     ordering="NONE"
     side="BOTH"
 [[dependencies.exnihiloextras]]
     modId="exnihilosequentia"
     mandatory=true
-    versionRange="[4.2.0,)"
+    versionRange="[5.0.0,)"
     ordering="NONE"
     side="BOTH"
 [modproperties.exnihiloextras]

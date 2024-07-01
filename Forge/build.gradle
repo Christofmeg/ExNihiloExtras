@@ -1,7 +1,7 @@
 import net.darkhax.curseforgegradle.TaskPublishCurseForge
 
 plugins {
-    id 'net.minecraftforge.gradle' version '6.+'
+    id 'net.minecraftforge.gradle' version '[6.0,6.2)'
     id 'idea'
     id 'net.darkhax.curseforgegradle' version '1.+'
     id 'com.modrinth.minotaur' version '2.+'
@@ -50,20 +50,16 @@ dependencies {
 
     // JEI
     if (project.hasProperty('jei_version')) {
-        compileOnly(fg.deobf("mezz.jei:jei-${minecraft_version}-common-api:${jei_version}"))
-        compileOnly(fg.deobf("mezz.jei:jei-${minecraft_version}-forge-api:${jei_version}"))
         runtimeOnly(fg.deobf("mezz.jei:jei-${minecraft_version}-forge:${jei_version}"))
     }
-    // CONFIGURED
-    if (project.hasProperty('configured_version')) {
-        implementation fg.deobf("curse.maven:configured-457570:${configured_version}")
-    }
+
     // CATALOGUE
     if (project.hasProperty('catalogue_version')) {
         implementation fg.deobf("curse.maven:catalogue-459701:${catalogue_version}")
     }
 
-    implementation fg.deobf("maven.modrinth:ex-nihilo-sequentia:1.19.2-4.2.0.57")
+    implementation fg.deobf("maven.modrinth:exnihilosequentia:fKKQtX5B") // https://modrinth.com/mod/exnihilosequentia/versions
+    implementation fg.deobf("maven.modrinth:novacore:ko25uOnM") // https://modrinth.com/mod/novacore/versions
 
 }
 
@@ -84,6 +80,7 @@ tasks.register('publishCurseForge', TaskPublishCurseForge) {
     "${forge_release_versions}".split(',').each {
         mainFile.addGameVersion("${it}")
     }
+    mainFile.addModLoader('Forge', 'NeoForge')
     mainFile.addRequirement("ex-nihilo-sequentia")
     mainFile.addOptional("catalogue")
 }
@@ -99,4 +96,5 @@ modrinth {
     dependencies {
         required.project "ex-nihilo-sequentia"
     }
+    loaders = "forge,neoforge".split(",") as List<String>
 }

@@ -1,5 +1,6 @@
 package com.christofmeg.exnihiloextras;
 
+import com.christofmeg.exnihiloextras.init.CreativeModeTabRegistry;
 import com.christofmeg.exnihiloextras.init.ItemRegistration;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -22,5 +23,6 @@ public class ExNihiloExtras {
 
     public static void init(@Nonnull IEventBus modEventBus) {
         ItemRegistration.init(modEventBus);
+        CreativeModeTabRegistry.init(modEventBus);
     }
 }

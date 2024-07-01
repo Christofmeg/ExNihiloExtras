@@ -6,13 +6,13 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-import novamachina.exnihilosequentia.common.item.DollItem;
+import novamachina.exnihilosequentia.world.item.DollItem;
 
 import javax.annotation.Nonnull;
 
 public class ItemRegistration {
 
-    private static final DeferredRegister<Item> ITEMS;
+    public static final DeferredRegister<Item> ITEMS;
     public static final RegistryObject<DollItem> FROG_DOLL;
 
     private ItemRegistration() {
@@ -24,4 +24,6 @@ public class ItemRegistration {
         ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, ExNihiloExtras.MOD_ID);
         FROG_DOLL = ITEMS.register("frog_doll", () -> new DollItem("minecraft", "frog", "minecraft", "water", 1.5, ExNihiloExtras.MOD_ID + "." + "tooltip.doll.frog"));
     }
+
+
 }
