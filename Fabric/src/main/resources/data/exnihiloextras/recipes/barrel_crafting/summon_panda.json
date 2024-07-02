@@ -1,0 +1,34 @@
+{
+  "type": "fabricaeexnihilo:barrel",
+  "actions": [
+    {
+      "type": "spawn_entity",
+      "entities": {
+        "type": "minecraft:panda",
+        "data": {},
+        "size": 1
+      }
+    },
+    {
+      "type": "store_fluid",
+      "amount": 0,
+      "fluid": {
+        "type": "minecraft:empty"
+      }
+    }
+  ],
+  "conditions": [
+    {
+      "type": "fluid_in",
+      "fluid": "#c:water"
+    }
+  ],
+  "duration": 20,
+  "icon": "minecraft:panda_spawn_egg",
+  "trigger": {
+    "type": "insert_item",
+    "item": {
+      "item": "exnihiloextras:doll_panda"
+    }
+  }
+}

@@ -37,8 +37,7 @@ dependencies {
         }
     }
 
-//    modImplementation "curse.maven:fabricae-ex-nihilo-596911:4657787" //https://www.curseforge.com/minecraft/mc-mods/fabricae-ex-nihilo/files?page=1&pageSize=20
-    modImplementation "curse.maven:cloth-config-348521:4633442" //https://www.curseforge.com/minecraft/mc-mods/cloth-config/files?page=1&pageSize=20
+    modImplementation "curse.maven:fabricae-ex-nihilo-596911:5298550" //https://www.curseforge.com/minecraft/mc-mods/fabricae-ex-nihilo/files?page=1&pageSize=20
 
     // not included in the final JAR
     implementation("com.github.LlamaLad7.mixinextras:mixinextras-fabric:0.2.0-beta.9")

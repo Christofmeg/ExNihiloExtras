@@ -30,5 +30,4 @@ public class ItemRegistration {
         TURTLE_DOLL = ITEMS.register("turtle_doll", () -> new DollItem("minecraft", "turtle", "minecraft", "water", 1.5, ExNihiloExtras.MOD_ID + "." + "tooltip.doll.turtle"));
     }
 
-
 }
