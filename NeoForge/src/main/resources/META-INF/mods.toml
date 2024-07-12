@@ -1,0 +1,32 @@
+modLoader="javafml"
+loaderVersion="[1,)"
+issueTrackerURL="https://github.com/Christofmeg/ExNihiloExtras/issues"
+license="The MIT License (MIT)"
+[[mods]]
+    modId="exnihiloextras"
+    version="${file.jarVersion}"
+    displayName="Ex Nihilo Extras"
+    displayURL="https://github.com/Christofmeg/ExNihiloExtras"
+    logoFile="icon.png"
+    authors="Christofmeg"
+    description="Addon for Ex Nihilo: Sequentia adding extra features."
+[[dependencies.exnihiloextras]]
+    modId="neoforge"
+    type="required"
+    versionRange="[20.4,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.exnihiloextras]]
+    modId="minecraft"
+    type="required"
+    versionRange="[1.20.4,1.21)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.exnihiloextras]]
+    modId="exnihilosequentia"
+    type="required"
+    versionRange="[6.0.0,)"
+    ordering="NONE"
+    side="BOTH"
+[modproperties.exnihiloextras]
+    catalogueImageIcon="catalogue-icon.png"
